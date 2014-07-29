@@ -4,7 +4,9 @@ Prototypes - Magic Door
 This is sample code for our Magic Door protoype. Each example is triggered by the closing of a door read by the Arduino. 
 
 V1: Colors - Node Server that swiches background color
+
 V2: StreetView - Node Server that switches Google StreetView Location
+
 V3: StreetView-Head Tracking -  Node Server that switches Google StreetView Location.  Incorporates Head Tracking so the user can look left and right in the Street View Panorama.  This is also has a simple projection mapping library impletmented to fit the canvas to the projected surface. Requires Webcam. 
 
 To run:
