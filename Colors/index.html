@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var ws = new WebSocket('ws://localhost:8000');
+			
+			var prevIndex;
+	
+
+			var colorList =new Array("#009933", "#C019FF", "#FF5400", "#FF00FF", "#00DEFF", "#B22032", "#007D92", "#FF79A0 " );
+			var index = prevIndex;
+			while (index == prevIndex){
+				index = Math.floor(Math.random()*colorList.length);
+			}
+			prevIndex = index;
+			document.body.style.background=colorList[index];
+			
+			ws.onopen = function(){
+				console.log('ws connection open');
+			};
+
+			ws.onmessage = function(msg){
+				var c = msg.data;
+				var colorList =new Array("#009933", "#C019FF", "#FF5400", "#FF00FF", "#00DEFF", "#B22032", "#007D92", "#FF79A0 " );
+				console.log(c);
+				if (msg.data == 0){
+					var index = prevIndex;
+					while (index == prevIndex){
+						index = Math.floor(Math.random()*colorList.length);
+					}
+					prevIndex = index;
+					document.body.style.background=colorList[index];
+				}
+			};
+
+		</script>
+	</body>
+</html>

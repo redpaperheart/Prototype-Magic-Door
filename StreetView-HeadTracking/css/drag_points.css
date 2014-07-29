@@ -1,0 +1,37 @@
+html, body{
+    width: 100%;
+    background-color: #000;
+
+}
+
+#container {
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 800px;
+    width: 1920px;
+    height: 1080px;
+    background-color: #000;
+
+}
+.img {
+    position:absolute; 
+    width: 1920px; 
+    height: 1080px;
+    clip: rect(50px, 1257px, 1030px, 662px);
+
+}
+.pt {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    border-radius: 15px;
+    background-color: #F00;
+    cursor: pointer;
+}
+
+
+
+
+
