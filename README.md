@@ -19,10 +19,14 @@ Node Server that switches Google StreetView Location.  Incorporates Head Trackin
 2) For the the StreetView folders, add your Google Map API Key to the index.html file
 
 3) In terminal, navigate to your folder and install 3 NodeJS modules:
-npm install express
-npm install serialport
-npm install ws
+
+	npm install express
+
+	npm install serialport
+
+	npm install ws
 
 4) Enter "node app.js" in Terminal and the Node server is running
 
 5) Go to "localhost:8000" in your browser
+
